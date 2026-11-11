@@ -89,7 +89,7 @@ th {
 | `CosyVoice3Model` | CosyVoice3 | `FunAudioLLM/Fun-CosyVoice3-0.5B-2512` | ✅︎ | ✅︎ | | ✅︎ | — |
 | `AuKForConditionalGeneration` | AuK / AuK-Flash (instruction-driven speech generation and editing) | `tencent/AuK`, `tencent/AuK-Flash` (with `Qwen/Qwen2.5-Omni-3B`; assemble with `tools/prepare_auk_checkpoint.py`) | ✅︎ | | | ✅︎ | [Repository](https://github.com/vllm-project/vllm-omni/blob/main/recipes/Tencent/AuK-H100.md) |
 | `OmniVoiceModel` | OmniVoice | `k2-fsa/OmniVoice` | ✅︎ | | | ✅︎ | — |
-| `VoxCPM2TalkerForConditionalGeneration` | VoxCPM2 | `openbmb/VoxCPM2` | ✅︎ | | | ✅︎ | — |
+| `VoxCPM2TalkerForConditionalGeneration` | VoxCPM2 | `openbmb/VoxCPM2` | ✅︎ | | | ✅︎ | [RTX 5060 Ti 16GB evidence](https://github.com/vllm-project/vllm-omni/blob/main/recipes/OpenBMB/VoxCPM2-RTX5060Ti-16GB.md) |
 | `BreezeForConditionalGeneration` | Breeze-TTS-2 (voice design, voice clone, voice direction, CFG) | `BreezeBlue/Breeze-TTS-2` | ✅︎ | | | ✅︎ | [Repository](https://github.com/vllm-project/vllm-omni/blob/main/recipes/BreezeBlue/Breeze-TTS-2.md) |
 | `MammothModa2ForConditionalGeneration` | MammothModa2-Preview | `bytedance-research/MammothModa2-Preview` | ✅︎ | ✅︎ | | ✅︎ | — |
 | `MammothModa2ForConditionalGeneration` | MammothModa2-Dev (AR-only image understanding) | `bytedance-research/MammothModa2-Dev` | ✅︎ | | | | — |
@@ -148,6 +148,10 @@ added for that model row yet.
 For rows with an audited recipe link, the hardware checkmarks reflect hardware
 explicitly documented in that recipe. Other rows retain the implementation
 support metadata until their recipe is audited.
+
+The VoxCPM2 evidence link covers one NVIDIA RTX 5060 Ti 16GB Linux profile.
+Its other backend checkmarks retain existing implementation metadata and are
+not qualified by that hardware recipe.
 
 ✅︎ indicates the model is supported on that backend. Empty cells mean not listed as supported on that backend.
 
